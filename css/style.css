@@ -1,74 +1,84 @@
 :root {
-	--theme-color: #b00000;
+  --theme-color: #b00000;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	font-family: monospace;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
 }
 
 header {
-	background: var(--theme-color) url("../assets/ennuimiddleflap.jpg");
-	background-size: cover;
-	text-align: center;
-	padding-top: 10vh;
-	padding-bottom: 10vh;
+  background: var(--theme-color) url("../assets/ennuimiddleflap.jpg");
+  background-size: cover;
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 section {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 table {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 th {
-	text-align: right;
+  text-align: right;
 }
 
-th, td {
-	padding: 0.5em;
+th,
+td {
+  padding: 0.5em;
 }
 
 li {
-	list-style-position: inside;
+  list-style-position: inside;
 }
 
 .parenthetical {
-	font-size: .7em;
+  font-size: .7em;
 }
 
 .bracket {
-	padding-right: 0;
-	padding-left: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .bordered {
-	border: 1px solid darkgrey;
+  border: 1px solid darkgrey;
 }
 
-#donation-button-wrapper {
-	padding: 0.5em;
-	text-align: right;
+#donation-button-outer {
+  padding: 0.5em;
+  text-align: right;
+}
+
+#donation-button-inner {
+  display: inline-block;
+  text-align: left;
+}
+
+#donation-button-inner a:visited,
+#donation-button-inner a:active {
+  color: black;
 }
 
 a:link {
-	color: black;
+  color: black;
 }
-a:visited {
-	color: var(--theme-color);
+
+a:visited, a:active {
+  color: var(--theme-color);
 }
-a:active {
-	color: var(--theme-color);
-}
+
 a:hover {
-	color: red;
+  color: red;
 }
